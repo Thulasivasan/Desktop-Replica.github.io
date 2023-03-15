@@ -1,0 +1,82 @@
+*,::after,::before{
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    position: relative;
+    margin: 0;
+    background-image: url(images/wallpaer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+main{
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 20vh;
+    /* outline: 2px solid #fff; */
+}
+.main-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 350px;
+    /* outline: 2px solid red; */
+}
+.main-container ul li{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid white;
+    width: 4.2rem;
+    height: 4.2rem;
+    margin: 0 auto;
+    border-radius: .1rem;
+}
+.main-container ul li:hover,
+.main-container ul li:focus{
+    background: rgba(255, 255, 255, .2);
+}
+.footer-container{
+    display: flex;flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    padding: 0 .5rem;
+    background: rgba(42, 42, 42, 0.95);
+    transform-origin: bottom; 
+    transform: translateY(99%);
+    transition: transform 400ms;
+}
+.footer-container:hover{
+    transform: translateY(0);
+}
+.footer-container div ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+.footer-container div ul li{
+    padding: 1rem 0;
+}
+.footer-container ul li:hover{
+    background: rgba(255, 255, 255, .2);
+}
