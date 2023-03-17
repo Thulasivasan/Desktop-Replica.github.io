@@ -61,7 +61,7 @@ main{
     padding: 0 .5rem;
     background: rgba(42, 42, 42, 0.95);
     transform-origin: bottom; 
-    transform: translateY(99%);
+    /* transform: translateY(99%); */
     transition: transform 400ms;
 }
 .footer-container:hover{
